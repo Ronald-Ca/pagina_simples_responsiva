@@ -71,6 +71,10 @@ main {
     height: 41.6rem;
     object-fit: cover;
     border-radius: 6px;
+    transition: transform 0.2s;
+}
+.card img:hover {
+    transform: scale(1.1);
 }
 .card h2 {
     position: absolute;
