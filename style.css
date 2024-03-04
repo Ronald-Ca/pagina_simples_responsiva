@@ -99,3 +99,30 @@ main {
     align-items: center;
     width: fit-content;
 }
+header {
+    animation: topdown 0.7s;
+}
+main {
+    animation: downtop 0.7s 350ms backwards;
+
+}
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
